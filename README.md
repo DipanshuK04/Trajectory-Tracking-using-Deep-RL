@@ -4,9 +4,20 @@
 
 This project explores the advanced application of Deep Reinforcement Learning (Deep RL) to solve the complex problem of trajectory tracking in an omnidirectional robot. The primary objective is to develop a sophisticated control system that allows the robot to accurately follow a predefined path, both in simulation and eventually on physical hardware. The project bridges the gap between theoretical models and real-world applications, aiming for high precision and adaptability in dynamic environments.
 
-# SIMULATION IMAGE
+# SIMULATION IMAGES
+<!-- Centered text above the image -->
+<!-- Centered text and images -->
+<p align="center">OmniDirectional Car</p>
+<p align="center">
+  <img src="Images/omniCar.jpg" alt="OmniDirectional Car">
+</p>
 
-![]
+<p align="center">Vehicle Approaching Target Location</p>
+<p align="center">
+  <img src="Images/ReachingTargetLoc.jpg" alt="Vehicle Approaching Target Location">
+</p>
+
+
 ## Project Development
 
 ### 1. **Deep Reinforcement Learning for Control Systems**
@@ -48,7 +59,13 @@ This project explores the advanced application of Deep Reinforcement Learning (D
    - **Replication of Simulation Success**: The goal is to replicate the high performance seen in simulation, validating the A2C-based approach and its applicability in real-world scenarios.
 
 ## Results
+
+Training graph
+<p align="center">
+  <img src="Images/OmniRL_graph1.jpeg" alt="Training Graph">
+</p>
+
    - **Simulation Success**: The robot has shown promising results in simulation, consistently following the desired trajectory with high precision. The A2C algorithm, combined with a carefully designed reward structure, has proven effective in achieving the project’s goals. Performance graphs reflect steady improvement in key metrics, including path accuracy and energy efficiency.
    - **Future Work and Feedback Integration**: As the project moves towards hardware implementation, ongoing feedback and experimental results will be crucial in refining the approach. Continuous improvements will focus on enhancing the robot’s adaptability to real-world conditions, optimizing the reward function further, and fine-tuning the A2C algorithm to meet the challenges posed by physical deployment.
 
-Stay tuned for further updates as we continue to transition from simulation to hardware implementation, pushing the boundaries of Deep Reinforcement Learning in robotics!
+Please share any feedback or suggestions for improvements as we continue our transition from simulation to hardware implementation, exploring new advancements in Deep Reinforcement Learning for robotics.
