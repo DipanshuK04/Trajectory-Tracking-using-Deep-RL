@@ -1,0 +1,1434 @@
+<?xml version="1.0" ?>
+<robot name="OMNIDIRECTIONAL">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.075 0.105 0.01" rpy="0 0 0"/>
+    <mass value="3.5324999999999998"/>
+    <inertia ixx="0.006741187500000009" iyy="0.006741187499999999" izz="0.013246875000000012" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror2">
+  <inertial>
+    <origin xyz="-2.3803035404182382e-07 -3.424767636983628e-07 4.3054225323628514e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="1.0802059469359896e-06" izz="1.0802059469360286e-06" ixy="3.3299927073973857e-07" iyz="2.3546604189711765e-07" ixz="-3.329992707397786e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.163524 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.163524 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror1">
+  <inertial>
+    <origin xyz="-2.3803035383018756e-07 -6.698900456569845e-08 4.492760330432333e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388838e-07" iyy="8.447399050388855e-07" izz="1.3156719888329565e-06" ixy="4.709320849405216e-07" iyz="2.710505431213761e-20" ixz="-2.710505431213761e-20"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.179699 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.179699 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror8">
+  <inertial>
+    <origin xyz="-2.3803035460734367e-07 -4.305422693917649e-07 -3.42476780164358e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="1.0802059469359939e-06" izz="1.0802059469360286e-06" ixy="3.3299927073979956e-07" iyz="-2.35466041897077e-07" ixz="3.329992707397538e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.196051 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.196051 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror7">
+  <inertial>
+    <origin xyz="-2.3803035563776942e-07 -6.103451077876798e-14 -6.698902137690366e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.44739905038667e-07" iyy="1.3156719888330768e-06" izz="8.447399050388838e-07" ixy="0.0" iyz="2.0328790734103208e-20" ixz="4.709320849405199e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.203 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.203 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror6">
+  <inertial>
+    <origin xyz="-2.3803035652941729e-07 3.4247676442000774e-07 -4.305422861804187e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.44739905038667e-07" iyy="1.0802059469359507e-06" izz="1.0802059469360286e-06" ixy="-3.3299927073979956e-07" iyz="2.354660418971041e-07" ixz="3.3299927073974027e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.196476 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.196476 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror5">
+  <inertial>
+    <origin xyz="-2.3803035652941729e-07 6.698900534285457e-08 -7.790296185916645e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="8.447399050388534e-07" izz="1.3156719888329565e-06" ixy="-4.709320849405148e-07" iyz="-4.0657581468206416e-20" ixz="-3.218725199566341e-20"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.180301 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.180301 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror3">
+  <inertial>
+    <origin xyz="-2.3803035617206425e-07 4.305422699468764e-07 3.4247674755155666e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388838e-07" iyy="1.0802059469359608e-06" izz="1.0802059469359202e-06" ixy="-3.329992707397589e-07" iyz="-2.354660418971312e-07" ixz="-3.329992707397657e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.163949 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.163949 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirror4">
+  <inertial>
+    <origin xyz="-2.380303550375551e-07 6.217248937900877e-14 6.698898856981328e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388838e-07" iyy="1.3156719888330785e-06" izz="8.447399050387754e-07" ixy="-1.3552527156068805e-20" iyz="-1.3552527156068805e-20" ixz="-4.709320849405182e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.157 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.157 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirror4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror1">
+  <inertial>
+    <origin xyz="-2.3803034835886971e-07 6.698900459692347e-08 6.49671288988074e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388466e-07" iyy="8.447399050388788e-07" izz="1.3156719888330887e-06" ixy="-4.709320849405216e-07" iyz="1.1858461261560205e-20" ixz="9.317362419797304e-21"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.030301 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.030301 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror2">
+  <inertial>
+    <origin xyz="-2.3803034803621115e-07 3.424767638857129e-07 4.3054227321249333e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388364e-07" iyy="1.0802059469359854e-06" izz="1.0802059469359812e-06" ixy="-3.329992707397623e-07" iyz="-2.3546604189709478e-07" ixz="-3.3299927073976017e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.046476 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.046476 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror4">
+  <inertial>
+    <origin xyz="-2.3803034729028005e-07 -6.178391132038996e-14 6.698900846535683e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388432e-07" iyy="1.3156719888330776e-06" izz="8.447399050388838e-07" ixy="1.3552527156068805e-20" iyz="6.776263578034403e-21" ixz="-4.709320849405195e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.053 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.053 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror7">
+  <inertial>
+    <origin xyz="-2.380303479286583e-07 -3.424767645275606e-07 -4.305422661270153e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388872e-07" iyy="1.080205946935954e-06" izz="1.0802059469359642e-06" ixy="3.329992707397657e-07" iyz="-2.354660418971151e-07" ixz="3.329992707397589e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.013524 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.013524 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror8">
+  <inertial>
+    <origin xyz="-2.3803034825131686e-07 4.30542269221762e-07 -3.424767605350945e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388652e-07" iyy="1.0802059469359913e-06" izz="1.0802059469359693e-06" ixy="-3.3299927073975297e-07" iyz="2.3546604189710558e-07" ixz="3.3299927073977203e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.013949 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.013949 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror6">
+  <inertial>
+    <origin xyz="-2.38030348143764e-07 6.08532321755284e-14 -6.69890015542185e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388775e-07" iyy="1.3156719888330802e-06" izz="8.447399050388517e-07" ixy="1.0587911840678754e-20" iyz="-1.6093625997831706e-20" ixz="4.709320849405182e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.007 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.007 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror5">
+  <inertial>
+    <origin xyz="-2.3803034768232756e-07 -6.698900534285457e-08 -5.801609193056834e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388771e-07" iyy="8.447399050388432e-07" izz="1.3156719888330819e-06" ixy="4.709320849405182e-07" iyz="0.0" ixz="6.776263578034403e-21"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.029699 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.029699 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror3">
+  <inertial>
+    <origin xyz="-2.3803034729028005e-07 -4.305422699260597e-07 3.4247676748005995e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388838e-07" iyy="1.0802059469359642e-06" izz="1.080205946935988e-06" ixy="3.3299927073977245e-07" iyz="2.3546604189710749e-07" ixz="-3.3299927073975043e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.016067 -0.046051 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.016067 -0.046051 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror7">
+  <inertial>
+    <origin xyz="2.3803034907010634e-07 -6.112471639951877e-14 6.69890048501931e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388567e-07" iyy="1.3156719888331734e-06" izz="8.447399050389923e-07" ixy="2.710505431213761e-20" iyz="0.0" ixz="4.7093208494053515e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.053 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.053 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror2">
+  <inertial>
+    <origin xyz="2.3803034931990652e-07 -6.698900495080706e-08 -6.152023335204149e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388703e-07" iyy="8.447399050389923e-07" izz="1.3156719888331734e-06" ixy="-4.709320849405216e-07" iyz="3.3881317890172014e-21" ixz="-1.3552527156068805e-20"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.029699 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.029699 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror4">
+  <inertial>
+    <origin xyz="2.3803034959746228e-07 -3.4247676412683947e-07 -4.305422697248318e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388669e-07" iyy="1.0802059469359202e-06" izz="1.080205946936137e-06" ixy="-3.329992707397589e-07" iyz="-2.354660418971041e-07" ixz="-3.3299927073974535e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.013524 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.013524 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror3">
+  <inertial>
+    <origin xyz="2.3803034937541767e-07 4.3054226961034003e-07 -3.4247676422224926e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388584e-07" iyy="1.0802059469359202e-06" izz="1.0802059469360286e-06" ixy="3.329992707397657e-07" iyz="2.3546604189710537e-07" ixz="-3.329992707397623e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.013949 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.013949 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror5">
+  <inertial>
+    <origin xyz="2.3803034926439537e-07 6.698900503060434e-08 6.123400397850531e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388601e-07" iyy="8.447399050388838e-07" izz="1.315671988833065e-06" ixy="4.7093208494050805e-07" iyz="3.3881317890172014e-21" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.030301 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.030301 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror6">
+  <inertial>
+    <origin xyz="2.380303490145952e-07 3.4247676428122986e-07 4.3054226956957403e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388703e-07" iyy="1.0802059469359202e-06" izz="1.0802059469358118e-06" ixy="3.3299927073974535e-07" iyz="-2.3546604189710325e-07" ixz="3.329992707397657e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.046476 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.046476 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror1">
+  <inertial>
+    <origin xyz="2.3803034915337307e-07 -4.3054226941952045e-07 3.424767637955073e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388771e-07" iyy="1.0802059469358118e-06" izz="1.0802059469359202e-06" ixy="-3.3299927073977245e-07" iyz="2.3546604189710749e-07" ixz="3.329992707397589e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.046051 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.046051 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirrorMirror8">
+  <inertial>
+    <origin xyz="2.3803039278513793e-07 1.5612511283791264e-16 -6.698904826685226e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399044657115e-07" iyy="1.3156719899792835e-06" izz="8.447399044655577e-07" ixy="0.0" iyz="3.5998900258307764e-21" ixz="-4.709320843673717e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.007 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.007 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirrorMirror8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_11">
+  <inertial>
+    <origin xyz="2.3803034937541767e-07 6.698900495427651e-08 -6.183942247162122e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="8.447399050387754e-07" izz="1.315671988833065e-06" ixy="4.7093208494039963e-07" iyz="1.3552527156068805e-20" ixz="-1.3552527156068805e-20"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.180301 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.180301 -0.033" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_12">
+  <inertial>
+    <origin xyz="2.3803034970848458e-07 3.424767640036741e-07 -4.305422699989181e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050391007e-07" iyy="1.0802059469360286e-06" izz="1.0802059469360286e-06" ixy="3.3299927073985377e-07" iyz="2.3546604189711765e-07" ixz="-3.3299927073974535e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.196476 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.196476 -0.026051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_12.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_14">
+  <inertial>
+    <origin xyz="2.3803034948643997e-07 -6.136757768615553e-14 -6.698900527520035e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="1.3156719888329565e-06" izz="8.447399050389923e-07" ixy="0.0" iyz="6.776263578034403e-21" ixz="-4.709320849405148e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.203 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.203 -0.009699" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_14.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_13">
+  <inertial>
+    <origin xyz="2.380303494586844e-07 -4.3054226966932063e-07 -3.4247676434541463e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="1.0802059469359202e-06" izz="1.0802059469360286e-06" ixy="-3.3299927073974535e-07" iyz="-2.3546604189710749e-07" ixz="-3.329992707397555e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.196051 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.196051 0.006476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_13.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_18">
+  <inertial>
+    <origin xyz="2.3803034890357289e-07 4.305422696138095e-07 3.424767636185655e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050391007e-07" iyy="1.0802059469360286e-06" izz="1.0802059469360286e-06" ixy="3.3299927073974535e-07" iyz="-2.3546604189709055e-07" ixz="3.3299927073974535e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.163949 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_18.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.163949 -0.026476" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_18.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_17">
+  <inertial>
+    <origin xyz="2.380303489868396e-07 6.11455330812305e-14 6.698900470794578e-08" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="1.315671988833065e-06" izz="8.447399050387754e-07" ixy="0.0" iyz="0.0" ixz="4.709320849405284e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.157 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_17.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.157 -0.010301" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_17.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_16">
+  <inertial>
+    <origin xyz="2.380303490145952e-07 -3.42476764142452e-07 4.305422693666114e-07" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050387754e-07" iyy="1.0802059469359202e-06" izz="1.0802059469358118e-06" ixy="-3.3299927073985377e-07" iyz="2.354660418971041e-07" ixz="3.329992707397623e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.163524 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_16.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.163524 0.006051" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_16.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="ROLLERMirrorMirror_15">
+  <inertial>
+    <origin xyz="2.3803034926439537e-07 -6.698900506529881e-08 6.102410243791212e-14" rpy="0 0 0"/>
+    <mass value="0.02047655371552846"/>
+    <inertia ixx="8.447399050388838e-07" iyy="8.447399050387754e-07" izz="1.315671988833065e-06" ixy="-4.7093208494061647e-07" iyz="-6.776263578034403e-21" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.166067 -0.179699 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.166067 -0.179699 0.013" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/ROLLERMirrorMirror_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FRAMEMirrorMirror_11">
+  <inertial>
+    <origin xyz="-0.006438473738459793 -4.564760236469567e-10 -5.056800516517468e-10" rpy="0 0 0"/>
+    <mass value="0.04425548570320003"/>
+    <inertia ixx="2.085012511926932e-05" iyy="1.3324143863560492e-05" izz="1.3324145137874697e-05" ixy="-3.7231957968064666e-13" iyz="3.284101777415588e-13" ixz="-3.377521515506715e-13"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.15 -0.18 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirrorMirror_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.15 -0.18 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirrorMirror_11.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FRAMEMirrorMirrorMirror1">
+  <inertial>
+    <origin xyz="-0.006438473738459932 4.5647609303589576e-10 -5.056800672642581e-10" rpy="0 0 0"/>
+    <mass value="0.04425548570320003"/>
+    <inertia ixx="2.0850125119268575e-05" iyy="1.3324143863560492e-05" izz="1.3324145137874914e-05" ixy="3.723189833694518e-13" iyz="-3.284099321020041e-13" ixz="-3.3775211089309004e-13"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.15 -0.03 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirrorMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0.15 -0.03 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirrorMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FRAMEMirror1">
+  <inertial>
+    <origin xyz="0.006438473738459809 4.564763844694397e-10 5.056801331837502e-10" rpy="0 0 0"/>
+    <mass value="0.04425548570320003"/>
+    <inertia ixx="2.0850125119269104e-05" iyy="1.3324143863559876e-05" izz="1.332414513787513e-05" ixy="-3.7231874620022656e-13" iyz="3.284102997143032e-13" ixz="-3.3775219432583535e-13"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.18 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.18 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="FRAMEMirrorMirror1">
+  <inertial>
+    <origin xyz="0.0064384737384598 -4.5647622487487993e-10 5.056800117531068e-10" rpy="0 0 0"/>
+    <mass value="0.04425548570320003"/>
+    <inertia ixx="2.0850125119269368e-05" iyy="1.3324143863560374e-05" izz="1.332414513787532e-05" ixy="3.723191968217545e-13" iyz="-3.284101980703495e-13" ixz="-3.37752135880562e-13"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.03 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.03 -0.01" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/FRAMEMirrorMirror1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute_30" type="continuous">
+  <origin xyz="0.016067 -0.016476 -0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror2"/>
+  <axis xyz="-0.707107 0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_30_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_30">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_30_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_31" type="continuous">
+  <origin xyz="0.016067 -0.000301 -0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror1"/>
+  <axis xyz="-0.707107 0.707107 0.0"/>
+</joint>
+<transmission name="Revolute_31_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_31">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_31_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_32" type="continuous">
+  <origin xyz="0.016067 0.016051 -0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror8"/>
+  <axis xyz="-0.707107 0.5 0.5"/>
+</joint>
+<transmission name="Revolute_32_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_32">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_32_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_33" type="continuous">
+  <origin xyz="0.016067 0.023 -0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror7"/>
+  <axis xyz="-0.707107 -0.0 0.707107"/>
+</joint>
+<transmission name="Revolute_33_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_33">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_33_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_34" type="continuous">
+  <origin xyz="0.016067 0.016476 0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror6"/>
+  <axis xyz="-0.707107 -0.5 0.5"/>
+</joint>
+<transmission name="Revolute_34_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_34">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_34_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_35" type="continuous">
+  <origin xyz="0.016067 0.000301 0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror5"/>
+  <axis xyz="-0.707107 -0.707107 -0.0"/>
+</joint>
+<transmission name="Revolute_35_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_35">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_35_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_36" type="continuous">
+  <origin xyz="0.016067 -0.016051 0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror3"/>
+  <axis xyz="-0.707107 -0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_36_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_36">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_36_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_37" type="continuous">
+  <origin xyz="0.016067 -0.023 0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirror1"/>
+  <child link="ROLLERMirror4"/>
+  <axis xyz="-0.707107 -0.0 -0.707107"/>
+</joint>
+<transmission name="Revolute_37_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_37">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_37_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_38" type="continuous">
+  <origin xyz="0.016067 0.000301 -0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror1"/>
+  <axis xyz="0.707107 0.707107 -0.0"/>
+</joint>
+<transmission name="Revolute_38_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_38">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_38_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_39" type="continuous">
+  <origin xyz="0.016067 0.016476 -0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror2"/>
+  <axis xyz="0.707107 0.5 0.5"/>
+</joint>
+<transmission name="Revolute_39_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_39">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_39_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_40" type="continuous">
+  <origin xyz="0.016067 0.023 0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror4"/>
+  <axis xyz="0.707107 -0.0 0.707107"/>
+</joint>
+<transmission name="Revolute_40_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_40">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_40_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_41" type="continuous">
+  <origin xyz="0.016067 -0.016476 0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror7"/>
+  <axis xyz="0.707107 -0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_41_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_41">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_41_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_42" type="continuous">
+  <origin xyz="0.016067 -0.016051 -0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror8"/>
+  <axis xyz="0.707107 0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_42_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_42">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_42_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_43" type="continuous">
+  <origin xyz="0.016067 -0.023 -0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror6"/>
+  <axis xyz="0.707107 -0.0 -0.707107"/>
+</joint>
+<transmission name="Revolute_43_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_43">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_43_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_44" type="continuous">
+  <origin xyz="0.016067 -0.000301 0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror5"/>
+  <axis xyz="0.707107 -0.707107 0.0"/>
+</joint>
+<transmission name="Revolute_44_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_44">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_44_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_45" type="continuous">
+  <origin xyz="0.016067 0.016051 0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror1"/>
+  <child link="ROLLERMirrorMirror3"/>
+  <axis xyz="0.707107 -0.5 0.5"/>
+</joint>
+<transmission name="Revolute_45_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_45">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_45_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_46" type="continuous">
+  <origin xyz="-0.016067 0.023 0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror7"/>
+  <axis xyz="0.707107 0.0 -0.707107"/>
+</joint>
+<transmission name="Revolute_46_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_46">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_46_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_47" type="continuous">
+  <origin xyz="-0.016067 -0.000301 0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror2"/>
+  <axis xyz="0.707107 0.707107 0.0"/>
+</joint>
+<transmission name="Revolute_47_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_47">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_47_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_48" type="continuous">
+  <origin xyz="-0.016067 -0.016476 0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror4"/>
+  <axis xyz="0.707107 0.5 0.5"/>
+</joint>
+<transmission name="Revolute_48_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_48">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_48_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_49" type="continuous">
+  <origin xyz="-0.016067 -0.016051 -0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror3"/>
+  <axis xyz="0.707107 -0.5 0.5"/>
+</joint>
+<transmission name="Revolute_49_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_49">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_49_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_50" type="continuous">
+  <origin xyz="-0.016067 0.000301 -0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror5"/>
+  <axis xyz="0.707107 -0.707107 -0.0"/>
+</joint>
+<transmission name="Revolute_50_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_50">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_50_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_51" type="continuous">
+  <origin xyz="-0.016067 0.016476 -0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror6"/>
+  <axis xyz="0.707107 -0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_51_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_51">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_51_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_52" type="continuous">
+  <origin xyz="-0.016067 0.016051 0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror1"/>
+  <axis xyz="0.707107 0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_52_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_52">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_52_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_53" type="continuous">
+  <origin xyz="-0.016067 -0.023 -0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirrorMirror1"/>
+  <child link="ROLLERMirrorMirrorMirror8"/>
+  <axis xyz="0.707107 -0.0 0.707107"/>
+</joint>
+<transmission name="Revolute_53_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_53">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_53_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_54" type="continuous">
+  <origin xyz="-0.016067 0.000301 0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_11"/>
+  <axis xyz="-0.707107 0.707107 0.0"/>
+</joint>
+<transmission name="Revolute_54_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_54">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_54_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_55" type="continuous">
+  <origin xyz="-0.016067 0.016476 0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_12"/>
+  <axis xyz="-0.707107 0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_55_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_55">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_55_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_56" type="continuous">
+  <origin xyz="-0.016067 0.023 -0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_14"/>
+  <axis xyz="-0.707107 0.0 -0.707107"/>
+</joint>
+<transmission name="Revolute_56_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_56">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_56_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_57" type="continuous">
+  <origin xyz="-0.016067 0.016051 -0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_13"/>
+  <axis xyz="-0.707107 -0.5 -0.5"/>
+</joint>
+<transmission name="Revolute_57_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_57">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_57_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_58" type="continuous">
+  <origin xyz="-0.016067 -0.016051 0.016476" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_18"/>
+  <axis xyz="-0.707107 0.5 0.5"/>
+</joint>
+<transmission name="Revolute_58_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_58">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_58_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_59" type="continuous">
+  <origin xyz="-0.016067 -0.023 0.000301" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_17"/>
+  <axis xyz="-0.707107 0.0 0.707107"/>
+</joint>
+<transmission name="Revolute_59_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_59">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_59_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_60" type="continuous">
+  <origin xyz="-0.016067 -0.016476 -0.016051" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_16"/>
+  <axis xyz="-0.707107 -0.5 0.5"/>
+</joint>
+<transmission name="Revolute_60_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_60">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_60_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_61" type="continuous">
+  <origin xyz="-0.016067 -0.000301 -0.023" rpy="0 0 0"/>
+  <parent link="FRAMEMirrorMirror_11"/>
+  <child link="ROLLERMirrorMirror_15"/>
+  <axis xyz="-0.707107 -0.707107 -0.0"/>
+</joint>
+<transmission name="Revolute_61_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_61">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_61_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_66" type="continuous">
+  <origin xyz="-0.15 0.18 0.01" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FRAMEMirrorMirror_11"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+<transmission name="Revolute_66_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_66">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_66_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_67" type="continuous">
+  <origin xyz="-0.15 0.03 0.01" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FRAMEMirrorMirrorMirror1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+<transmission name="Revolute_67_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_67">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_67_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_68" type="continuous">
+  <origin xyz="0.0 0.18 0.01" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FRAMEMirror1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+<transmission name="Revolute_68_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_68">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_68_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Revolute_69" type="continuous">
+  <origin xyz="0.0 0.03 0.01" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="FRAMEMirrorMirror1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+<transmission name="Revolute_69_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Revolute_69">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Revolute_69_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
