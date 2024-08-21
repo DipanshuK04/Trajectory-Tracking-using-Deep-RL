@@ -17,6 +17,22 @@ This project explores the advanced application of Deep Reinforcement Learning (D
   <img src="Images/ReachingTargetLoc.jpg" alt="Vehicle Approaching Target Location">
 </p>
 
+# Usage
+
+1. **Clone the Repository**: Start by cloning the code repository to your local machine.
+
+2. **Install Dependencies**: Navigate to the cloned directory and install the necessary Python packages. Make sure you have `pip` installed.
+
+   ```bash
+   pip install stable-baselines3 gymnasium
+3. **Check the Environment**: Run the check_env.py file to ensure that the environment is correctly set up.
+   ```bash
+   python check_env.py
+4. **Run the Training Process**: Execute the OmniTrainRLTrial.py file to start the training process. The script will render the training process of the omnidirectional car.
+   ```bash
+   python OmniTrainRLTrial.py
+5. **Review Logs**: After the training is complete, you will have a log file of the fully trained omnidirectional car, which is ready to reach the target location.
+
 
 ## Project Development
 
